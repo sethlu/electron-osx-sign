@@ -1,10 +1,8 @@
 ## Electron Mac App Store Walk-Through
 
-Submitting an Electron application to the Mac App Store (MAS) the three packaging tools [electron-packager](https://github.com/maxogden/electron-packager), [electron-osx-sign](https://github.com/sethlu/electron-osx-sign) and electron-osx-flat (included with electron-osx-sign).
+Submitting an Electron application to the Mac App Store (MAS) has been made as simple as possible using three packaging tools: [electron-packager](https://github.com/maxogden/electron-packager), [electron-osx-sign](https://github.com/sethlu/electron-osx-sign) and electron-osx-flat (included with electron-osx-sign). 
 
-In addition to these three build tools, a specially compiled "MAS Build" of [Electron](https://github.com/atom/electron/releases) is required.
-
-[sethlu's fork of electron-packager](https://github.com/sethlu/electron-packager) greatly simplifies the process because it downloads the necessary MAS Build of electron instead of having to obtain and override your system-installed version. This fork is in queue to be merged into the main distribution any day, but at the moment you must explicitly install the fork.
+[sethlu's fork of electron-packager](https://github.com/sethlu/electron-packager) greatly simplifies the process because it downloads the necessary "MAS Build" of Electron instead of having to obtain and override your system-installed version. This fork is [expected to be merged](https://github.com/maxogden/electron-packager/pull/223) soon into the main distribution any day, but at the moment you must explicitly install the fork.
 
 #### Prerequisites
 
