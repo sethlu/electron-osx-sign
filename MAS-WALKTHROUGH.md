@@ -6,8 +6,7 @@ Submitting an Electron application to the Mac App Store (MAS) has been made as s
 
 #### Prerequisites
 
-You must be a registered member of the App [Apple Developer Program](https://developer.apple.com/).
-
+* You must be a registered member of the App [Apple Developer Program](https://developer.apple.com/).
 * You must have [XCode](https://developer.apple.com/xcode/) installed.
 * You must create an OSX app on [iTunes Connect](https://itunesconnect.apple.com). For this walkthrough we will use the name "My App" as the application name.
 * You must give your app a unique Bundle Id. For this walkthrough, we will use the Bundle ID "com.mysite.myapp"
