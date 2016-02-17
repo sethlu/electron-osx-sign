@@ -31,6 +31,8 @@ npm install electron-osx-sign -g
 
 The first step is to compile your application into an .app bundle. Notice that the --platform which you would normally expect to be "darwin" is instead "mas" to indicate this build is for the Mac App Store. Currenly only sethlu's fork supports the mas platform. The difference is that MAS builds ommit certain libraries and private API calls that will cause the electron app to be rejected.
 
+Open terminal and CD to your application source directory. Run the following command:
+
 ```
 electron-packager . "My App" --app-bundle-id=com.mysite.myapp --helper-bundle-id=com.mysite.myapp.helper --app-version=1.0.0 --build-version=1.0.100 --platform=mas --arch=x64 --version=0.36.7 --ignore="node_modules/electron-*" --icon=path/to/your/Icon.icns --overwrite
 ```
@@ -39,6 +41,7 @@ electron-packager . "My App" --app-bundle-id=com.mysite.myapp --helper-bundle-id
 
 *The arguments are all documented, however below are additional details that apply specifically to building apps for the Mac App Store.*
 
+* the dot "." is the path to your source code. In this case it assumes that your current directory is your source directory.
 * **--app-bundle-id** must match your Bundle ID that you assigned in iTunes Connect.
 * **--helper-bundle-id** is the same as your app-bundle-id with ".helper" prepended. Unless you have overridden the defaults for the helper bundle this value will be fine.
 * **--app-version** must match your Version Number in iTunes Connect.
