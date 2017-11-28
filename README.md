@@ -190,6 +190,7 @@ Default to system default keychain.
 Regex, function or an array of regex's and functions that signal skipping signing a file.
 Elements of other types are treated as `RegExp`.
 Default to `undefined`.
+*NB: You may include `Contents/Library/LoginItems` to avoid re-signing the login helper application, following [electron#11144](https://github.com/electron/electron/pull/11144).*
 
 `platform` - *String*
 
